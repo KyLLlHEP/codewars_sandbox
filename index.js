@@ -133,3 +133,16 @@ function basicOp(operation, value1, value2) {
       return undefined;
   }
 }
+//9th 8ku
+function squareSum(numbers) {
+  // Use map to square each number
+  const squaredNumbers = numbers.map((number) => number * number);
+
+  // Use reduce to sum the squared values
+  const sum = squaredNumbers.reduce(
+    (acc, squaredNumber) => acc + squaredNumber,
+    0
+  );
+
+  return sum;
+}
