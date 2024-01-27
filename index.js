@@ -57,3 +57,26 @@ function getGrade(s1, s2, s3) {
 // Example usage:
 const grade = getGrade(85, 92, 78);
 console.log(grade); // Output: 'B'
+// 3d task
+function sumArray(array) {
+  // Check for input validation
+  if (!array || array.length <= 1) {
+    return 0;
+  }
+
+  // Find the highest and lowest values in the array
+  const highest = Math.max(...array);
+  const lowest = Math.min(...array);
+
+  // Sum all elements except the highest and lowest
+  const sum = array.reduce((acc, num) => acc + num, 0) - highest - lowest;
+
+  return sum;
+}
+
+// Example usage:
+const result1 = sumArray([6, 2, 1, 8, 10]);
+console.log(result1); // Output: 16
+
+const result2 = sumArray([1, 1, 11, 2, 3]);
+console.log(result2); // Output: 6
