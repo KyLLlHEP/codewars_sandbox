@@ -89,3 +89,13 @@ function solution(str, ending) {
 // Examples:
 console.log(solution("abc", "bc")); // Output: true
 console.log(solution("abc", "d")); // Output: false
+//5th task 7ku
+function evenOrOdd(number) {
+  // Check if the number is even or odd
+  return number % 2 === 0 ? "Even" : "Odd";
+}
+
+// Examples:
+console.log(evenOrOdd(4));
+console.log(evenOrOdd(7));
+console.log(evenOrOdd(-2));
