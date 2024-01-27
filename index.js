@@ -106,3 +106,13 @@ function countSheeps(sheep) {
 
   return count;
 }
+//7th task 7ku
+function sumTwoSmallestNumbers(numbers) {
+  // Sort the array in ascending order
+  const sortedNumbers = numbers.sort((a, b) => a - b);
+
+  // Sum the two smallest numbers
+  const sum = sortedNumbers[0] + sortedNumbers[1];
+
+  return sum;
+}
