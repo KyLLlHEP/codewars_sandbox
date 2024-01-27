@@ -94,3 +94,15 @@ function evenOrOdd(number) {
   // Check if the number is even or odd
   return number % 2 === 0 ? "Even" : "Odd";
 }
+//6th task 7ku
+function countSheeps(sheep) {
+  // Check for bad values like null/undefined
+  if (!sheep || !Array.isArray(sheep)) {
+    return 0;
+  }
+
+  // Use filter to count the number of true values in the array
+  const count = sheep.filter((sheepPresent) => sheepPresent === true).length;
+
+  return count;
+}
