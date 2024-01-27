@@ -94,8 +94,3 @@ function evenOrOdd(number) {
   // Check if the number is even or odd
   return number % 2 === 0 ? "Even" : "Odd";
 }
-
-// Examples:
-console.log(evenOrOdd(4));
-console.log(evenOrOdd(7));
-console.log(evenOrOdd(-2));
