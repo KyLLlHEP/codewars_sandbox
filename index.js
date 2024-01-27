@@ -80,3 +80,12 @@ console.log(result1); // Output: 16
 
 const result2 = sumArray([1, 1, 11, 2, 3]);
 console.log(result2); // Output: 6
+// 4rd task 7ku
+function solution(str, ending) {
+  // Use endsWith to check if the string ends with the specified suffix
+  return str.endsWith(ending);
+}
+
+// Examples:
+console.log(solution("abc", "bc")); // Output: true
+console.log(solution("abc", "d")); // Output: false
